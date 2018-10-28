@@ -72,7 +72,7 @@ describe('sumOfOther', () => {
 
 	describe('recursion', () => {
 		it('1', () => {
-			//const recur = ;
-			assert.equal(recursion({"value":100,"left":{"value":90,"left":{"value":70},"right":{"value":99}},"right":{"value":120,"left":{"value":110},"right":{"value":130}}}), ([100,90,120,70,99,110,130]).toString());
+			const recur = recursion({"value":100,"left":{"value":90,"left":{"value":70},"right":{"value":99}},"right":{"value":120,"left":{"value":110},"right":{"value":130}}});
+			assert.equal(recur, ([100,90,120,70,99,110,130]).toString());
 		});
 	});
