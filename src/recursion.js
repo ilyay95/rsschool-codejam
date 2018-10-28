@@ -11,7 +11,7 @@ let arr = [];
             x--;
 
     }}
-    function recursion(tree) {
+    module.exports =function recursion(tree) {
         recurs(tree);
         return arr;
     }

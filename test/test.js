@@ -2,6 +2,7 @@ const assert = require('assert');
 
 const sumOfOther = require('../src/sumOfOther');
 const make = require('../src/make');
+const recursion = require('../src/recursion');
 
 describe('sumOfOther', () => {
 	it('1', () => {
@@ -66,5 +67,12 @@ describe('sumOfOther', () => {
 		it('5', () => {
 			const count = make(1)(2, 33, 112,343,5535,654757,-757433,4)(41)((a,b)=>a-b);
 			assert.equal(count, (96607).toString());
+		});
+	});
+
+	describe('recursion', () => {
+		it('1', () => {
+			//const recur = ;
+			assert.equal(recursion({"value":100,"left":{"value":90,"left":{"value":70},"right":{"value":99}},"right":{"value":120,"left":{"value":110},"right":{"value":130}}}), ([100,90,120,70,99,110,130]).toString());
 		});
 	});
