@@ -1,6 +1,7 @@
 const assert = require('assert');
 
 const sumOfOther = require('../src/sumOfOther');
+const make = require('../src/make');
 
 describe('sumOfOther', () => {
 	it('1', () => {
@@ -37,9 +38,33 @@ describe('sumOfOther', () => {
 		const sum=sumOfOther([-1,-55,-77,5,44,22,11,4]);
 	  assert.equal(sum.toString(), [-46, 8, 30, -52, -91, -69, -58, -51]);
 	});
-
-	
-
 	
 });
 
+
+	describe('make', () => {
+		it('1', () => {
+			const count = make(15)(34, 21, 666)(41)((a,b)=>a+b);
+			assert.equal(count, (777).toString());
+		});
+
+		it('2', () => {
+			const count = make(99)(-66, 21, 16)(41)((a,b)=>a-b);
+			assert.equal(count, (87).toString());
+		});
+
+		it('3', () => {
+			const count = make(0)(2, 331, 4)(-21)((a,b)=>a-b);
+			assert.equal(count, (-316).toString());
+		});
+
+		it('4', () => {
+			const count = make(22)(6)(-5)(55)(5)(41)((a,b)=>a+b);
+			assert.equal(count, (124).toString());
+		});
+
+		it('5', () => {
+			const count = make(1)(2, 33, 112,343,5535,654757,-757433,4)(41)((a,b)=>a-b);
+			assert.equal(count, (96607).toString());
+		});
+	});

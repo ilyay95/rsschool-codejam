@@ -1,17 +1,5 @@
-function sum(a,b){
-    return a+b;
-}
-function diff(a,b){
-    return a-b;
-}
-function mul(a,b){
-    return a*b;
-}
-function del(a,b){
-    
-    return a/b
-}
-function make(num) {
+
+module.exports =function make(num) {
     let sum = [+num];
   
     return function f() {
@@ -26,3 +14,16 @@ function make(num) {
         return f;
     };
   }
+  function sum(a,b){
+    return a+b;
+}
+function diff(a,b){
+    return a-b;
+}
+function mul(a,b){
+    return a*b;
+}
+function del(a,b){
+    
+    return a/b;
+}
