@@ -1,0 +1,23 @@
+{
+  "name": "rsschool-codejam",
+  "version": "1.0.0",
+  "description": "code-jam1",
+  "main": "sunOfOter.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha "
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ilyay95/rsschool-codejam.git"
+  },
+  "keywords": [],
+  "author": "Ilya ",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ilyay95/rsschool-codejam/issues"
+  },
+  "homepage": "https://github.com/ilyay95/rsschool-codejam#readme"
+}
